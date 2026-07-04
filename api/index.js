@@ -10,13 +10,28 @@ dotenv.config();
 
 const app = express();
 
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:5173",
+//       // Production domains yahan add kar dena
+//       "https://superguardrotherhithe.uk",
+//       "https://superguard-rotherhithe-frontend.vercel.app",
+//     ],
+//     credentials: true,
+//   })
+// );
+
+
+
+
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      // Production domains yahan add kar dena
-      // "https://superguardrotherhithe.uk",
-      // "https://superguardrotherhithe-frontend.vercel.app",
+      "https://superguardrotherhithe.uk",
+      "https://www.superguardrotherhithe.uk",
+      "https://superguard-rotherhithe-frontend.vercel.app",
     ],
     credentials: true,
   })
@@ -368,9 +383,9 @@ website.
 `,
     });
 
-    console.log("CONTACT MAIL SENT:", info.messageId);
-    console.log("CONTACT ACCEPTED:", info.accepted);
-    console.log("CONTACT REJECTED:", info.rejected);
+    // console.log("CONTACT MAIL SENT:", info.messageId);
+    // console.log("CONTACT ACCEPTED:", info.accepted);
+    // console.log("CONTACT REJECTED:", info.rejected);
 
     return res.status(200).json({
       success: true,
