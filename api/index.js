@@ -10,17 +10,7 @@ dotenv.config();
 
 const app = express();
 
-// app.use(
-//   cors({
-//     origin: [
-//       "http://localhost:5173",
-//       // Production domains yahan add kar dena
-//       "https://superguardrotherhithe.uk",
-//       "https://superguard-rotherhithe-frontend.vercel.app",
-//     ],
-//     credentials: true,
-//   })
-// );
+
 
 
 
