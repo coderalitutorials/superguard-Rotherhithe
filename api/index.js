@@ -30,7 +30,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("SuperGuard Rotherhithe Backend Server Running");
+  res.send("SuperGuard Rotherhithe Backend Server Running safely");
 });
 
 /* ==========================================================
